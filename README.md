@@ -211,7 +211,8 @@ public class RestHighLevelClientService {
     }
 创建索引，这里的settings是设置索引是否设置复制节点、设置分片个数，mappings就和数据库中的表结构一样，用来指定各个字段的类型，同时也可以设置字段是否分词（我们这里使用ik中文分词器）、采用什么分词方式。
 
-   @Test
+```java
+@Test
     public void createIdx() throws IOException {
         String settings = "" +
                 "  {\n" +
